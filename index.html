@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="TwinVLA: Data-Efficient Bimanual Policy through Twin Single-Arm Vision-Language-Action Models">
+  <meta name="keywords" content="TwinVLA, VLA, Bimanual">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>TwinVLA: Data-Efficient Bimanual Policy through Twin Single-Arm Vision-Language-Action Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -64,7 +64,7 @@
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item" href="">
-            Working on it!
+            We are working on it!
           </a>
         </div>
       </div>
@@ -260,8 +260,53 @@ Twin Single-Arm Vision-Language-Action Models</h1>
         <h2 class="title is-3">Experiments</h2>
         <div class="content has-text-justified">
           <p>
-            
+            We conduct both simulation and real-world experiments on diverse bimanual manipulation tasks
+            to test the architectural advantages and training scheme of TwinVLA model.
+            In both simulation and real-world robot settings,
+            our method achieved comparable or even better performance than state-of-the-art bimanual policies, 
+            despite using only single-arm data. Both the architecture of TwinVLA and the use of
+            pretraining significantly contributed to this performance improvement.
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-4">Tabletop Simulation</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-dish">
+          <video poster="" id="dish" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/dish.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-box">
+          <video poster="" id="box" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/box.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-lift">
+          <video poster="" id="lift" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/lift.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shoes">
+          <video poster="" id="shoes" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/shoes.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-pot">
+          <video poster="" id="pot" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/pot.mp4"
+                    type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
