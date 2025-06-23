@@ -217,7 +217,7 @@ Twin Single-Arm Vision-Language-Action Models</h1>
         <h3 class="title is-4">1. Single Arm VLA</h3>
         <img src="./static/images/euijin_singlevla.png" alt="Teaser">
         <p>
-          You can describe another module or behavior here. This is now aligned on the same row as the others!
+          We design SingleVLA using Eagle2-1B for compact and efficient vision-language-action modeling, enabling better transfer to TwinVLA. To enhance generalization, we introduce EEF-6D control for consistent action representation and frequency matching to align control rates across datasets. These methods improve transferability to bimanual settings, and we pretrain SingleVLA on OXE data for 100K steps over 5 days.
         </p>
       </div>
     </div>
@@ -228,8 +228,8 @@ Twin Single-Arm Vision-Language-Action Models</h1>
           <h3 class="title is-4">2. Mixture of Experts</h3>
           <img src="./static/images/euijin_moe_and_joint.png" alt="Teaser">
           <p>
-            As a byproduct of our method, we can also solve the matting problem by ignoring
-            samples that fall outside of a bounding box during rendering.
+            TwinVLA shares common inputs across two backbones using a Mixture-of-Experts (MoE) to reduce redundancy. 
+            It extends MoE beyond FFNs by gating shared inputs and averaging full transformer weights.
           </p>
         </div>
       </div>
@@ -237,11 +237,11 @@ Twin Single-Arm Vision-Language-Action Models</h1>
       <!-- 1st Column -->
       <div class="column">
         <div class="content">
-          <h3 class="title is-4">3. Joint Attention Mask</h3>
+          <h3 class="title is-4">3. Joint Attention</h3>
           <img src="./static/images/euijin_attention_mask.png" alt="Teaser">
+          <p></p>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            TwinVLA shares self-attention layers across arms with a custom mask and re-weighting to enable coordination while preserving single-arm pretraining balance.
           </p>
         </div>
       </div>
