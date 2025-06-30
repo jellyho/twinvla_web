@@ -210,7 +210,7 @@ Twin Single-Arm Vision-Language-Action Models</h1>
     <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
           <div class="tldr-container">
-            <h2 class="tldr-title">TL;DR: Learning from Large-Scale Video Datasets for Cross-Embodiment Skill Representations.</h2>
+            <h2 class="tldr-title">TL;DR: Data-efficient, high-performance bimanual manipulation without any bimanual pre-training</h2>
             <div class="tldr-video-container">
               <video class="tldr-video" id="teaser" autoplay muted loop controls>
                 <source src="./static/videos/TwinVLA_Video.mp4" type="video/mp4">
@@ -314,7 +314,6 @@ Twin Single-Arm Vision-Language-Action Models</h1>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Experiments</h2>
@@ -333,86 +332,118 @@ Twin Single-Arm Vision-Language-Action Models</h1>
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-4">Tabletop Simulation</h2>
-      <div class="carousel results-carousel">
-        <div class="item item-dish">
-          <video poster="" id="dish" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dish.mp4"
-                    type="video/mp4">
-          </video>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Tabletop Simulation</h2>
+        <img src="./static/images/sim_bar.png" alt="Tabletop Simulation Results" style="max-width:100%; margin-bottom:24px;">
+        <div class="carousel results-carousel">
+          <div class="item item-dish">
+            <video poster="" id="dish" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/dish.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-box">
+            <video poster="" id="box" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/box.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-lift">
+            <video poster="" id="lift" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/lift.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-shoes">
+            <video poster="" id="shoes" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/shoes.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-pot">
+            <video poster="" id="pot" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/pot.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-box">
-          <video poster="" id="box" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/box.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-lift">
-          <video poster="" id="lift" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/lift.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shoes">
-          <video poster="" id="shoes" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shoes.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-pot">
-          <video poster="" id="pot" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/pot.mp4"
-                    type="video/mp4">
-          </video>
+    
+        <div class="content has-text-justified">
+          <p>
+            TwinVLA, despite being pretrained only on single-arm data, outperforms RDT-1B trained on bimanual data, demonstrating the effectiveness of single-arm prior knowledge. However, it still falls short of π0, which benefits from large-scale high-quality bimanual pretraining.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-4">Real World (Anubis Robot)</h2>
-      <div class="carousel results-carousel">
-        <div class="item item-carrot">
-          <video poster="" id="carrot" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_carrot.mp4"
-                    type="video/mp4">
-          </video>
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Real World (Anubis Robot)</h2>
+        <img src="./static/images/real_bar.png" alt="Tabletop Real World Results" style="max-width:100%; margin-bottom:24px;">
+        <div class="carousel results-carousel">
+          <div class="item item-carrot">
+            <video poster="" id="carrot" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/real_carrot.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-pan">
+            <video poster="" id="pan" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/real_pan.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-kirby">
+            <video poster="" id="kirby" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/real_kirby2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-carrot">
+            <video poster="" id="carrot" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/real_carrot2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-pan">
+            <video poster="" id="pan" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/real_pan2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="item item-kirby">
+            <video poster="" id="kirby" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/real_kirby.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
         </div>
-        <div class="item item-pan">
-          <video poster="" id="pan" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_pan.mp4"
-                    type="video/mp4">
-          </video>
+        <div class="content has-text-justified">
+          <p>
+            In real-world experiments, π0 achieved the highest performance, with TwinVLA ranking second on average, outperforming RDT-1B and DP. TwinVLA once again shows competitive real-world performance by effectively learning bimanual tasks from single-arm data.
+          </p>
         </div>
-        <div class="item item-kirby">
-          <video poster="" id="kirby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_kirby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-carrot">
-          <video poster="" id="carrot" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_carrot2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-pan">
-          <video poster="" id="pan" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_pan2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-kirby">
-          <video poster="" id="kirby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/real_kirby.mp4"
-                    type="video/mp4">
-          </video>
+        <img src="./static/images/quali.png" alt="Tabletop Simulation Results" style="max-width:100%; margin-bottom:24px;">
+        <div class="content has-text-justified">
+          <p>
+            <b>Carrot to Bag:</b>
+            π0 had the highest success rate, followed by TwinVLA. DP struggled to grasp the bag cover properly, and RDT failed mainly due to inaccurate localization of the bag opening.
+          </p>
+          <p>
+            <b>Brush to Dustpan:</b>
+            DP had trouble either grasping the brush or inserting it successfully, while RDT grasped the brush well but lacked insertion precision. TwinVLA and π0 achieved the same success rate in this task.
+          </p>
+          <p>
+            <b>Take Towel Off:</b>
+            DP mostly failed to pull the doll toward the center, while the other models succeeded in doing so but varied in towel removal performance. TwinVLA struggled with removing the remaining part, whereas RDT and π0 succeeded by leveraging longer action chunks to overcome multimodality.
+          </p>
         </div>
       </div>
     </div>
