@@ -6,6 +6,59 @@
         content="TwinVLA: Data-Efficient Bimanual Policy through Twin Single-Arm Vision-Language-Action Models">
   <meta name="keywords" content="TwinVLA, VLA, Bimanual">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .tldr-container {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      padding: 30px;
+      margin: 40px 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+    
+    .tldr-title {
+      color: #333 !important;
+      font-size: 2rem !important;
+      font-weight: 700 !important;
+      margin-bottom: 25px !important;
+      display: flex;
+      align-items: center;
+    }
+    
+    .tldr-title::before {
+      content: "📌";
+      margin-right: 12px;
+      font-size: 1.8rem;
+    }
+    
+    .tldr-video-container {
+      border-radius: 6px;
+      overflow: hidden;
+      margin: 20px 0;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .tldr-video {
+      width: 100%;
+      display: block;
+    }
+    
+    .tldr-highlight {
+      background-color: #e8e8e8;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    
+    @media (max-width: 768px) {
+      .tldr-title {
+        font-size: 1.8rem !important;
+      }
+    }
+
+    p {
+      line-height: 1.65;
+    }
+  </style>
   <title>TwinVLA: Data-Efficient Bimanual Policy through Twin Single-Arm Vision-Language-Action Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -152,14 +205,17 @@ Twin Single-Arm Vision-Language-Action Models</h1>
 </section>
 
 <!-- Paper video. -->
-<section class="section">
+<section class="section" style="padding-top: 0;">
   <div class="container is-max-desktop"></div>
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-            <video autoplay controls muted loop playsinline>
+  <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <div class="tldr-container">
+          <h2 class="tldr-title">TL;DR: Learning from Large-Scale Video Datasets for Cross-Embodiment Skill Representations.</h2>
+          <div class="tldr-video-container">
+            <video class="tldr-video" id="teaser" autoplay="" muted="" loop="">
               <source src="./static/videos/TwinVLA_Video.mp4" type="video/mp4">
             </video>
+          </div>
         </div>
       </div>
     </div>
